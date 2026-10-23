@@ -1,0 +1,16 @@
+{
+  "name": "deckdumpster",
+  "owner": {
+    "name": "DeckDumpster"
+  },
+  "plugins": [
+    {
+      "name": "swu-cube",
+      "source": {
+        "source": "github",
+        "repo": "DeckDumpster/swu-cube"
+      },
+      "description": "Build a Star Wars: Unlimited Jumpstart cube from your dumpstar collection"
+    }
+  ]
+}

@@ -13,10 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: marketplace.json parses
-        run: |
-          if [ -f .claude-plugin/marketplace.json ]; then
-            jq -e '.name and (.plugins | type == "array")' .claude-plugin/marketplace.json
-          else
-            echo "no marketplace.json yet"
-          fi
+      - name: marketplace.json matches the schema
+        run: scripts/validate-marketplace.sh
